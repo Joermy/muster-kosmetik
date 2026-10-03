@@ -1,0 +1,454 @@
+.knopf {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sp-3);
+  padding: 15px 30px;
+  border: 0;
+  border-radius: 999px;
+  background: linear-gradient(120deg, var(--rosa), var(--violett));
+  color: #fff;
+  font: inherit;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: var(--schatten);
+  isolation: isolate;
+  overflow: hidden;
+  transition: transform 0.4s var(--kurve), box-shadow 0.4s var(--kurve);
+}
+
+.knopf::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(120deg, var(--violett), var(--rosa));
+  opacity: 0;
+  transition: opacity 0.5s var(--kurve);
+}
+
+.knopf:hover,
+.knopf:focus-visible {
+  transform: translateY(-2px);
+  box-shadow: 0 30px 70px -26px rgba(109, 40, 217, 0.55);
+}
+
+.knopf:hover::before,
+.knopf:focus-visible::before {
+  opacity: 1;
+}
+
+.knopf svg {
+  transition: transform 0.4s var(--kurve);
+}
+
+.knopf:hover svg,
+.knopf:focus-visible svg {
+  transform: translateX(4px);
+}
+
+.knopf--glas {
+  background: var(--glas);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  color: var(--text);
+  box-shadow: inset 0 0 0 1px var(--glas-rand), var(--schatten);
+}
+
+.knopf--glas::before {
+  background: #fff;
+}
+
+.knopf--glas:hover,
+.knopf--glas:focus-visible {
+  color: var(--text);
+}
+
+.glas {
+  position: relative;
+  padding: var(--sp-6);
+  border-radius: var(--radius);
+  background: var(--glas);
+  backdrop-filter: blur(20px) saturate(1.35);
+  -webkit-backdrop-filter: blur(20px) saturate(1.35);
+  box-shadow: inset 0 0 0 1px var(--glas-rand), var(--schatten);
+  transition: transform 0.6s var(--kurve), box-shadow 0.6s var(--kurve);
+}
+
+.glas--greifbar:hover,
+.glas--greifbar:focus-within {
+  transform: translateY(-5px);
+  box-shadow: inset 0 0 0 1px #fff, 0 34px 74px -30px rgba(63, 22, 84, 0.42);
+}
+
+.behandlung {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-4);
+  padding: var(--sp-5);
+}
+
+.behandlung__kopf {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--sp-4);
+}
+
+.behandlung__dauer {
+  flex: none;
+  font-size: var(--fs-meta);
+  font-weight: 600;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.behandlung p {
+  color: var(--muted);
+}
+
+.behandlung__marken {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-2);
+  margin-top: auto;
+  padding-top: var(--sp-4);
+}
+
+.marke-chip {
+  padding: 4px 12px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: inset 0 0 0 1px var(--rand);
+  font-size: var(--fs-meta);
+  color: var(--muted);
+}
+
+.finder {
+  display: grid;
+  gap: var(--sp-6);
+  padding: var(--sp-7);
+}
+
+.finder__frage {
+  display: grid;
+  gap: var(--sp-3);
+}
+
+.finder__frage > p {
+  font-weight: 600;
+}
+
+.finder__gruppe {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-2);
+}
+
+.finder__wahl {
+  padding: 9px 18px;
+  border: 0;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.72);
+  box-shadow: inset 0 0 0 1px var(--rand);
+  color: var(--muted);
+  font: inherit;
+  font-size: 0.9375rem;
+  cursor: pointer;
+  transition: color 0.3s var(--kurve), box-shadow 0.3s var(--kurve),
+              background-color 0.3s var(--kurve);
+}
+
+.finder__wahl:hover {
+  color: var(--text);
+}
+
+.finder__wahl[aria-pressed="true"] {
+  background: linear-gradient(120deg, var(--rosa), var(--violett));
+  box-shadow: none;
+  color: #fff;
+  font-weight: 600;
+}
+
+.finder__ergebnis {
+  padding-top: var(--sp-4);
+  border-top: 1px solid var(--rand);
+  font-size: var(--fs-meta);
+  color: var(--muted);
+}
+
+@media (max-width: 620px) {
+  .finder { padding: var(--sp-5); }
+}
+
+.preise {
+  display: grid;
+  gap: var(--sp-1);
+  margin: 0;
+}
+
+.preise div {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--sp-5);
+  padding-block: var(--sp-4);
+  border-bottom: 1px solid var(--rand);
+}
+
+.preise dt {
+  font-weight: 500;
+}
+
+.preise dt small {
+  display: block;
+  font-weight: 400;
+  font-size: var(--fs-meta);
+  color: var(--muted);
+}
+
+.preise dd {
+  margin: 0;
+  flex: none;
+  font-variant-numeric: tabular-nums;
+  color: var(--muted);
+}
+
+.ablauf {
+  position: relative;
+  display: grid;
+  gap: var(--sp-7);
+  padding-left: var(--sp-7);
+}
+
+.ablauf::before {
+  content: "";
+  position: absolute;
+  left: 15px;
+  top: 10px;
+  bottom: 10px;
+  width: 2px;
+  border-radius: 2px;
+  background: linear-gradient(to bottom, var(--v-rosa), var(--v-violett), var(--v-pfirsich));
+  opacity: 0.4;
+}
+
+.ablauf__schritt {
+  position: relative;
+}
+
+.ablauf__schritt::before {
+  content: "";
+  position: absolute;
+  left: calc(var(--sp-7) * -1 + 8px);
+  top: 9px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--bg);
+  box-shadow: 0 0 0 3px var(--violett);
+}
+
+.ablauf__schritt h3 {
+  margin-bottom: var(--sp-2);
+}
+
+.ablauf__schritt p {
+  color: var(--muted);
+}
+
+.kennzahlen {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--sp-5);
+  margin: 0;
+}
+
+@media (max-width: 700px) {
+  .kennzahlen { grid-template-columns: minmax(0, 1fr); }
+}
+
+.kennzahl {
+  padding: var(--sp-6);
+  border-radius: var(--radius);
+  background: var(--glas);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  box-shadow: inset 0 0 0 1px var(--glas-rand);
+  text-align: center;
+}
+
+.kennzahl dt {
+  font-size: var(--fs-meta);
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: var(--sp-3);
+}
+
+.kennzahl dd {
+  margin: 0;
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: clamp(2.25rem, 1.4rem + 2.6vw, 3.5rem);
+  line-height: 1;
+  letter-spacing: -0.04em;
+  font-variant-numeric: tabular-nums;
+  background: linear-gradient(120deg, var(--rosa), var(--violett));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.kennzahl dd span {
+  font-family: var(--schrift);
+  font-size: 0.32em;
+  font-weight: 600;
+  margin-left: 0.25em;
+}
+
+.klapp {
+  border-bottom: 1px solid var(--rand);
+}
+
+.klapp__knopf {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--sp-4);
+  width: 100%;
+  padding: var(--sp-5) 0;
+  border: 0;
+  background: none;
+  color: inherit;
+  font: inherit;
+  font-size: var(--fs-h3);
+  font-weight: 600;
+  text-align: left;
+  cursor: pointer;
+  transition: color 0.3s var(--kurve);
+}
+
+.klapp__knopf:hover {
+  color: var(--violett);
+}
+
+.klapp__zeichen {
+  flex: none;
+  width: 18px;
+  height: 18px;
+  position: relative;
+}
+
+.klapp__zeichen::before,
+.klapp__zeichen::after {
+  content: "";
+  position: absolute;
+  inset: 50% 0 auto 0;
+  height: 2px;
+  border-radius: 2px;
+  background: currentColor;
+  transition: transform 0.4s var(--kurve);
+}
+
+.klapp__zeichen::after {
+  transform: rotate(90deg);
+}
+
+.klapp__knopf[aria-expanded="true"] .klapp__zeichen::after {
+  transform: rotate(0deg);
+}
+
+.klapp__inhalt {
+  overflow: hidden;
+  height: 0;
+  transition: height 0.45s var(--kurve);
+}
+
+.klapp__inhalt > div {
+  padding-bottom: var(--sp-5);
+  color: var(--muted);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .klapp__inhalt { transition: none; }
+}
+
+.zitat {
+  margin: 0;
+  padding: var(--sp-8);
+  border-radius: var(--radius);
+  background: var(--glas);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow: inset 0 0 0 1px var(--glas-rand), var(--schatten);
+  text-align: center;
+}
+
+.zitat p {
+  margin-inline: auto;
+  max-width: 30ch;
+  font-family: var(--display);
+  font-weight: 600;
+  font-size: var(--fs-h3);
+  line-height: 1.35;
+  letter-spacing: -0.02em;
+}
+
+.zitat footer {
+  margin-top: var(--sp-5);
+  font-size: var(--fs-meta);
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.kontaktliste dt {
+  font-size: var(--fs-meta);
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: var(--sp-2);
+}
+
+.kontaktliste dd {
+  margin: 0 0 var(--sp-6);
+  font-family: var(--display);
+  font-weight: 600;
+  font-size: var(--fs-h3);
+  letter-spacing: -0.02em;
+}
+
+.kontaktliste a {
+  text-decoration-color: var(--rand);
+}
+
+.kontaktliste a:hover {
+  text-decoration-color: var(--violett);
+}
+
+.zeiten {
+  margin: 0;
+}
+
+.zeiten div {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--sp-5);
+  padding-block: var(--sp-3);
+  border-bottom: 1px solid var(--rand);
+}
+
+.zeiten dt {
+  color: var(--muted);
+}
+
+.zeiten dd {
+  margin: 0;
+  font-variant-numeric: tabular-nums;
+}

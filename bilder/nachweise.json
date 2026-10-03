@@ -1,0 +1,291 @@
+{
+ "lizenz": {
+  "quelle": "Unsplash",
+  "name": "Unsplash-Lizenz",
+  "url": "https://unsplash.com/license",
+  "hinweis": "Kostenfrei nutzbar, auch gewerblich, ohne Genehmigung und ohne Pflicht zur Namensnennung. Die Nennung erfolgt hier freiwillig. Nicht erlaubt: Weiterverkauf unveraenderter Kopien, Aufbau eines konkurrierenden Bilddienstes."
+ },
+ "bilder": {
+  "hero-portraet": {
+   "autor": "Look Studio",
+   "profil": "https://unsplash.com/@lookphoto",
+   "quelle": "https://unsplash.com/photos/TQSPgNqeCo8",
+   "alt": "Person laechelt und beruehrt die eigene Wange",
+   "breiten": [
+    1000,
+    1600,
+    2200
+   ],
+   "breite": 2200,
+   "hoehe": 1238,
+   "verhaeltnis": "16:9",
+   "farbe": "#e3dcda"
+  },
+  "hero-hoch": {
+   "autor": "Huha Inc.",
+   "profil": "https://unsplash.com/@wearhuha",
+   "quelle": "https://unsplash.com/photos/Hp-3N5Gl1Ak",
+   "alt": "Portraet mit ruhigem Blick zur Seite",
+   "breiten": [
+    560,
+    1120
+   ],
+   "breite": 1120,
+   "hoehe": 1400,
+   "verhaeltnis": "4:5",
+   "farbe": "#a08f82"
+  },
+  "studio-raum": {
+   "autor": "Benyamin Bohlouli",
+   "profil": "https://unsplash.com/@benyamin_bohlouli",
+   "quelle": "https://unsplash.com/photos/3qREdx1J_OQ",
+   "alt": "Heller Behandlungsraum mit zwei Stuehlen und einem Waschtisch",
+   "breiten": [
+    760,
+    1520
+   ],
+   "breite": 1520,
+   "hoehe": 1013,
+   "verhaeltnis": "3:2",
+   "farbe": "#a7aaa8"
+  },
+  "studio-spiegel": {
+   "autor": "Daniel",
+   "profil": "https://unsplash.com/@unsplashbydan",
+   "quelle": "https://unsplash.com/photos/Ui6DZ9A1eXU",
+   "alt": "Arbeitsplatz mit Stuhl, Waschbecken und Pflanze",
+   "breiten": [
+    560,
+    1120
+   ],
+   "breite": 1120,
+   "hoehe": 1400,
+   "verhaeltnis": "4:5",
+   "farbe": "#a7a394"
+  },
+  "studio-detail": {
+   "autor": "sour moha",
+   "profil": "https://unsplash.com/@sour_moha",
+   "quelle": "https://unsplash.com/photos/bl65mW8f2lA",
+   "alt": "Spiegel auf einer Ablage",
+   "breiten": [
+    560,
+    1120
+   ],
+   "breite": 1120,
+   "hoehe": 1400,
+   "verhaeltnis": "4:5",
+   "farbe": "#dac6ab"
+  },
+  "behandlung-gesicht": {
+   "autor": "kimia kazemi",
+   "profil": "https://unsplash.com/@kimick",
+   "quelle": "https://unsplash.com/photos/Xxs9WvkUPLo",
+   "alt": "Auftragen einer Pflegemaske mit dem Pinsel",
+   "breiten": [
+    440,
+    880
+   ],
+   "breite": 880,
+   "hoehe": 880,
+   "verhaeltnis": "1:1",
+   "farbe": "#80604e"
+  },
+  "behandlung-maske": {
+   "autor": "Rosa Rafael",
+   "profil": "https://unsplash.com/@rosarafael",
+   "quelle": "https://unsplash.com/photos/Pe9IXUuC6QU",
+   "alt": "Gesichtsbehandlung mit aufgetragener Maske",
+   "breiten": [
+    440,
+    880
+   ],
+   "breite": 880,
+   "hoehe": 880,
+   "verhaeltnis": "1:1",
+   "farbe": "#a2907b"
+  },
+  "behandlung-reinigung": {
+   "autor": "kimia kazemi",
+   "profil": "https://unsplash.com/@kimick",
+   "quelle": "https://unsplash.com/photos/J6Hg_YH2tFk",
+   "alt": "Reinigungsschaum im Gesicht waehrend der Behandlung",
+   "breiten": [
+    440,
+    880
+   ],
+   "breite": 880,
+   "hoehe": 880,
+   "verhaeltnis": "1:1",
+   "farbe": "#836a57"
+  },
+  "behandlung-pflege": {
+   "autor": "Leighann Blackwood",
+   "profil": "https://unsplash.com/@ohleighann",
+   "quelle": "https://unsplash.com/photos/zoYLGk2oULA",
+   "alt": "Auftragen einer Pflegecreme",
+   "breiten": [
+    440,
+    880
+   ],
+   "breite": 880,
+   "hoehe": 880,
+   "verhaeltnis": "1:1",
+   "farbe": "#6e5a4a"
+  },
+  "behandlung-naegel": {
+   "autor": "Chelson Tamares",
+   "profil": "https://unsplash.com/@jd_chon",
+   "quelle": "https://unsplash.com/photos/vtQHwU4F13s",
+   "alt": "Hand mit hell lackierten Naegeln",
+   "breiten": [
+    440,
+    880
+   ],
+   "breite": 880,
+   "hoehe": 880,
+   "verhaeltnis": "1:1",
+   "farbe": "#be9c86"
+  },
+  "behandlung-wimpern": {
+   "autor": "Hayley Kim Studios",
+   "profil": "https://unsplash.com/@hayleykimstudios",
+   "quelle": "https://unsplash.com/photos/sRSRuxkOuzI",
+   "alt": "Wimpernverlaengerung mit der Pinzette",
+   "breiten": [
+    440,
+    880
+   ],
+   "breite": 880,
+   "hoehe": 880,
+   "verhaeltnis": "1:1",
+   "farbe": "#a98b7c"
+  },
+  "produkte-flaschen": {
+   "autor": "Kier in Sight Archives",
+   "profil": "https://unsplash.com/@kierinsightarchives",
+   "quelle": "https://unsplash.com/photos/OHQcMO-8i2I",
+   "alt": "Glasflaschen mit Pflegeprodukten",
+   "breiten": [
+    660,
+    1320
+   ],
+   "breite": 1320,
+   "hoehe": 880,
+   "verhaeltnis": "3:2",
+   "farbe": "#ada8a9"
+  },
+  "produkte-ablage": {
+   "autor": "michela ampolo",
+   "profil": "https://unsplash.com/@mikelina5",
+   "quelle": "https://unsplash.com/photos/7tDGb3HrITg",
+   "alt": "Pflegeprodukte und ein Rollstab auf heller Ablage",
+   "breiten": [
+    660,
+    1320
+   ],
+   "breite": 1320,
+   "hoehe": 880,
+   "verhaeltnis": "3:2",
+   "farbe": "#aaa190"
+  },
+  "produkte-pinsel": {
+   "autor": "Anna Evans",
+   "profil": "https://unsplash.com/@anevans",
+   "quelle": "https://unsplash.com/photos/W69XtU15eRM",
+   "alt": "Drei Pinsel auf einem Tisch",
+   "breiten": [
+    660,
+    1320
+   ],
+   "breite": 1320,
+   "hoehe": 880,
+   "verhaeltnis": "3:2",
+   "farbe": "#28292b"
+  },
+  "ruhe-handtuecher": {
+   "autor": "Anna Keibalo",
+   "profil": "https://unsplash.com/@anyutakejbalo",
+   "quelle": "https://unsplash.com/photos/-kYCpF55lIg",
+   "alt": "Gerollte Handtuecher",
+   "breiten": [
+    560,
+    1120
+   ],
+   "breite": 1120,
+   "hoehe": 1400,
+   "verhaeltnis": "4:5",
+   "farbe": "#cba89f"
+  },
+  "ruhe-kerzen": {
+   "autor": "Anna Keibalo",
+   "profil": "https://unsplash.com/@anyutakejbalo",
+   "quelle": "https://unsplash.com/photos/q8xEBCO6DQg",
+   "alt": "Kerzen auf einer Ablage",
+   "breiten": [
+    660,
+    1320
+   ],
+   "breite": 1320,
+   "hoehe": 880,
+   "verhaeltnis": "3:2",
+   "farbe": "#876e5d"
+  },
+  "detail-wimpern": {
+   "autor": "Milky Way Lashes",
+   "profil": "https://unsplash.com/@milkywaylashes",
+   "quelle": "https://unsplash.com/photos/GEct9d7zgos",
+   "alt": "Nahaufnahme eines Auges mit langen Wimpern",
+   "breiten": [
+    1000,
+    1600
+   ],
+   "breite": 1600,
+   "hoehe": 900,
+   "verhaeltnis": "16:9",
+   "farbe": "#b27f63"
+  },
+  "detail-haende": {
+   "autor": "Ellie Eshaghi",
+   "profil": "https://unsplash.com/@eliiesh",
+   "quelle": "https://unsplash.com/photos/DtoWpHt2_d8",
+   "alt": "Hand mit hellem Naturnagellack",
+   "breiten": [
+    660,
+    1320
+   ],
+   "breite": 1320,
+   "hoehe": 880,
+   "verhaeltnis": "3:2",
+   "farbe": "#e1d3c9"
+  },
+  "portraet-team": {
+   "autor": "Fleur Kaan",
+   "profil": "https://unsplash.com/@fleuraimeekaan",
+   "quelle": "https://unsplash.com/photos/e7jpGYe7OtU",
+   "alt": "Portraet vor unscharfem Hintergrund",
+   "breiten": [
+    560,
+    1120
+   ],
+   "breite": 1120,
+   "hoehe": 1400,
+   "verhaeltnis": "4:5",
+   "farbe": "#84543c"
+  },
+  "portraet-zweit": {
+   "autor": "Houcine Ncib",
+   "profil": "https://unsplash.com/@houcinencibphotography",
+   "quelle": "https://unsplash.com/photos/B4TjXnI0Y2c",
+   "alt": "Portraet mit Sommersprossen, Hand am Kinn",
+   "breiten": [
+    560,
+    1120
+   ],
+   "breite": 1120,
+   "hoehe": 1400,
+   "verhaeltnis": "4:5",
+   "farbe": "#81715f"
+  }
+ }
+}

@@ -1,0 +1,111 @@
+html.js-bewegung .einblenden {
+  opacity: 0;
+  filter: blur(14px);
+  transform: translate3d(0, 26px, 0) scale(0.985);
+  transition: opacity 1s var(--kurve), filter 1s var(--kurve),
+              transform 1.1s var(--kurve);
+}
+
+html.js-bewegung .einblenden.ist-sichtbar {
+  opacity: 1;
+  filter: none;
+  transform: none;
+}
+
+html.js-bewegung .scharfstellen {
+  opacity: 0;
+  filter: blur(22px);
+  transform: scale(1.06);
+  transition: opacity 1.2s var(--kurve), filter 1.2s var(--kurve),
+              transform 1.4s var(--kurve);
+}
+
+html.js-bewegung .scharfstellen.ist-sichtbar {
+  opacity: 1;
+  filter: none;
+  transform: none;
+}
+
+html.js-bewegung .wort {
+  display: inline-block;
+  opacity: 0;
+  filter: blur(10px);
+  transform: translate3d(0, 18px, 0);
+  transition: opacity 0.8s var(--kurve), filter 0.8s var(--kurve),
+              transform 0.9s var(--kurve);
+  transition-delay: var(--verzug, 0ms);
+}
+
+html.js-bewegung .ist-sichtbar .wort {
+  opacity: 1;
+  filter: none;
+  transform: none;
+}
+
+html.js-bewegung .einblenden.ist-fertig,
+html.js-bewegung .scharfstellen.ist-fertig {
+  opacity: 1 !important;
+  filter: none !important;
+  transform: none !important;
+  transition: none !important;
+}
+
+html.js-bewegung .ist-fertig .wort {
+  opacity: 1 !important;
+  filter: none !important;
+  transform: none !important;
+  transition: none !important;
+}
+
+.maske {
+  position: relative;
+}
+
+.maske__bild {
+  overflow: hidden;
+  clip-path: inset(
+    0
+    calc((1 - var(--oeffnung, 0)) * 12%)
+    0
+    calc((1 - var(--oeffnung, 0)) * 12%)
+    round calc(32px + (1 - var(--oeffnung, 0)) * 60px)
+  );
+}
+
+@view-transition {
+  navigation: auto;
+}
+
+::view-transition-old(root) {
+  animation: seite-weg 0.3s ease both;
+}
+
+::view-transition-new(root) {
+  animation: seite-her 0.5s var(--kurve) both;
+}
+
+@keyframes seite-weg {
+  to { opacity: 0; }
+}
+
+@keyframes seite-her {
+  from { opacity: 0; transform: scale(0.995); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html.js-bewegung .einblenden,
+  html.js-bewegung .scharfstellen,
+  html.js-bewegung .wort {
+    opacity: 1 !important;
+    filter: none !important;
+    transform: none !important;
+    transition: none !important;
+  }
+
+  .maske__bild { clip-path: inset(0 round 32px); }
+
+  ::view-transition-old(root),
+  ::view-transition-new(root) {
+    animation: none;
+  }
+}
